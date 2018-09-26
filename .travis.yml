@@ -76,6 +76,10 @@ matrix:
       env: TARGET=s390x-unknown-linux-gnu
            DOCKER=s390x-unknown-linux-gnu
            SKIP_TESTS=1
+    - os: linux
+      env: TARGET=x86_64-unknown-linux-musl
+           DOCKER=x86_64-unknown-linux-musl
+           SKIP_TESTS=1
 
     # Android use a local docker image
     - os: linux
